@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDU Factorization Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>LDU Factorization Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/project.html"><i class="fas fa-calculator"></i> Calculator</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to the LDU Factorization Calculator</h2>
+            <p>Learn how to calculate the LDU Factorization for a given matrix. Below, we show each step of the process for a 3x3 matrix, making it easy to follow along.</p>
+            <a href="#calculation" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="calculation">
+            <div class="step-container">
+                <div class="matrix-step">
+                    <p><strong>Given matrix</strong></p>
+                    <table>
+                        <tr>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    <span class="arrow">&#8594;</span>
+                </div>
+                <div class="matrix-step">
+                    <p><strong>L Matrix</strong></p>
+                    <table>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0.5</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0.25</td>
+                            <td>0.5</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                    <span class="arrow">&#8594;</span>
+                </div>
+                <div class="matrix-step">
+                    <p><strong>D Matrix</strong></p>
+                    <table>
+                        <tr>
+                            <td>8</td>
+                            <td>4</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                    <span class="arrow">&#8594;</span>
+                </div>
+                <div class="matrix-step">
+                    <p><strong>U Matrix</strong></p>
+                    <table>
+                        <tr>
+                            <td>0.8</td>
+                            <td>0.4</td>
+                            <td>0.2</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>3.5</td>
+                            <td>1.5</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>2.5</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="contributors">
+            <h3>Contributors <i class="fas fa-plus-circle add-contributor"></i></h3>
+            <ul>
+                <li>Bhagwan singh rawat 
+                    <i class="fas fa-user"></i></li>
+                <li>Bhaskar Kumar 
+                    <i class="fas fa-user"></i></li>
+                <li>shivam kumar<i class="fas fa-user"></i></li>
+                <li>Mausam Kumari <i class="fas fa-user"></i></li>
+
+
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LDU Factorization Tool. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
