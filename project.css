@@ -1,0 +1,134 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+  flex-direction: column;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Matrix input container */
+.matrix-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Matrix input grid */
+.matrix {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  background-color: #e9e9e9;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.matrix div {
+  margin: 2px 0;
+}
+
+.matrix input {
+  width: 50px;
+  margin: 0 5px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.matrix input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+.matrix span {
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+/* Output and steps containers */
+.output, .steps-output {
+  margin-top: 20px;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.steps-output h3 {
+  margin-bottom: 10px;
+}
+
+.steps-output p {
+  background-color: #f9f9f9;
+  padding: 5px;
+  border-left: 5px solid #4CAF50;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Matrix display */
+.matrix-output {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.matrix-output div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.matrix-output span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .matrix {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .matrix input {
+    width: 80px;
+    margin: 2px 0;
+  }
+
+  .output, .steps-output {
+    width: 90%;
+  }
+}

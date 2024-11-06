@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDU Factorization with Row Elimination Steps</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+    <h1>LDU Matrix Factorization with Row Elimination</h1>
+
+    <div class="matrix-container">
+        <label>Enter Matrix Dimensions:</label>
+        <div>
+            <label for="rows">Rows (m): </label>
+            <input type="number" id="rows" min="2" placeholder="Number of Rows">
+        </div>
+        <div>
+            <label for="columns">Columns (n): </label>
+            <input type="number" id="columns" min="2" placeholder="Number of Columns">
+        </div>
+        <button onclick="generateMatrixInput()">Generate Matrix Input</button>
+    </div>
+
+    <div id="matrix-inputs" class="matrix-container"></div>
+
+    <button onclick="calculateLDU()">Calculate LDU with Steps</button>
+
+    <div id="steps-output" class="steps-output"></div>
+    <div id="output" class="output"></div>
+
+    <script src="project.js"></script>
+</body>
+</html>
